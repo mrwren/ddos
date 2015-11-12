@@ -11,10 +11,10 @@ try:
 	print "checking host: " + host + " ..."
 	conn = httplib.HTTPConnection(host)
 	conn.connect()
-	print "server is online."
+	print "server is online"
 
 except(httplib.HTTPResponse, socket.error) as Exit:
-	raw_input("[!] server offline or invalid url.")
+	raw_input("[!] server offline or invalid url")
 	exit()
 
 message = raw_input(str("any message to send: "))
