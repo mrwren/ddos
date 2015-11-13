@@ -34,7 +34,7 @@ def attack():
 	except socket.error, msg:
 		print "[!] failed ... error"
 
-	print time.ctime(time.time()) + " >> attacking " + host + " " + ip
+	print time.ctime(time.time()) + " : attacking >> " + host + " " + ip
 	dos.close()
 
 for i in xrange(conn):
